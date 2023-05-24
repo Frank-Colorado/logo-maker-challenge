@@ -1,3 +1,4 @@
+const { expect } = require("@jest/globals");
 // require the shape classes from the shapes.js file
 const { Circle, Square, Triangle } = require("../libs/shapes");
 
