@@ -17,7 +17,7 @@ class Circle extends Shape {
   render() {
     return `
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-        <circle cx="50" cy="50" r="40" fill="${this.shapeColor}"/>
+        <circle cx="150" cy="100" r="80" fill="${this.shapeColor}"/>
         <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
         </svg>
         `;
@@ -29,7 +29,7 @@ class Square extends Shape {
   render() {
     return `
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-          <rect x="10" y="10" width="80" height="80" fill="${this.shapeColor}"/>
+          <rect x="50" y="50" width="190" height="200" fill="${this.shapeColor}"/>
           <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
           </svg>
           `;
@@ -41,7 +41,7 @@ class Triangle extends Shape {
   render() {
     return `
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-            <polygon points="50,10 10,90 90,90" fill="${this.shapeColor}"/>
+            <polygon points="150,0 255,180 48,180" fill="${this.shapeColor}"/>
             <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
             </svg>
             `;
