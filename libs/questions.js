@@ -32,6 +32,7 @@ questions = [
     name: "textColor",
     message:
       "What color do you want your logo text to be? (color keyword or hex code)",
+    validate: validateColor(value),
   },
   // Prompt for shape
   {
@@ -46,5 +47,6 @@ questions = [
     name: "shapeColor",
     message:
       "What color do you want your logo shape to be? (color keyword or hex code)",
+    validate: validateColor(value),
   },
 ];
