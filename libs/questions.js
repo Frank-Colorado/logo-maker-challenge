@@ -1,3 +1,17 @@
+// tinycolor2: https://www.npmjs.com/package/tinycolor2
+// tinycolor2 is a package that allows us to convert colors to different formats and validate colors
+const tinyColor = require("tinycolor2");
+
+const validateColor = (color) => {
+  // If the color is valid, return true
+  if (color.isValid()) {
+    return true;
+  } else {
+    // Otherwise, return an error message
+    return "Please enter a valid color";
+  }
+};
+
 questions = [
   // Prompt for text
   // 3 character limit
