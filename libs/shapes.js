@@ -35,6 +35,7 @@ class Square extends Shape {
           `;
   }
 }
+
 // A class called Triangle that extends the Shape class.
 class Triangle extends Shape {
   render() {
