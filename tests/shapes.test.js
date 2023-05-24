@@ -17,3 +17,21 @@ describe("Circle", () => {
     });
   });
 });
+
+// A test for the Square class
+describe("Square", () => {
+  // A test for the render method
+  describe("render", () => {
+    it("should return an svg string for a square", () => {
+      const square = new Square("test", "red", "blue");
+      const result = square.render();
+      expect(result).toEqual(expect.any(String));
+      expect(result).toContain(`
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+          <rect x="10" y="10" width="80" height="80" fill="blue"/>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="red">test</text>
+          </svg>
+          `);
+    });
+  });
+});
