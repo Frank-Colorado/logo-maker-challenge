@@ -21,9 +21,9 @@ questions = [
   // Prompt for text
   // 3 character limit
   {
-    type: "input",
-    name: "name",
+    name: "text",
     message: "What text do you want on your logo? (3 character limit)",
+    type: "input",
     validate: function (value) {
       if (value.length <= 3) {
         return true;
@@ -33,27 +33,27 @@ questions = [
   },
   // Prompt for text color
   {
-    type: "input",
     name: "textColor",
     message:
       "What color do you want your logo text to be? (color keyword or hex code)",
+    type: "input",
     validate: function (value) {
       return validateColor(value);
     },
   },
   // Prompt for shape
   {
-    type: "list",
     name: "shape",
     message: "What shape do you want your logo to be?",
+    type: "list",
     choices: ["circle", "square", "triangle"],
   },
   // Prompt for shape color
   {
-    type: "input",
     name: "shapeColor",
     message:
       "What color do you want your logo shape to be? (color keyword or hex code)",
+    type: "input",
     validate: function (value) {
       return validateColor(value);
     },
