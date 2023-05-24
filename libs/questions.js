@@ -50,3 +50,5 @@ questions = [
     validate: validateColor(value),
   },
 ];
+
+module.exports = { validateColor, questions };
