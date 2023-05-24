@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.6",
+    "inquirer": "^8.2.4",
     "tinycolor2": "^1.6.0"
   },
   "devDependencies": {

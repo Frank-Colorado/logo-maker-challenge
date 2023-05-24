@@ -1,4 +1,3 @@
-// require the inquirer package
 const inquirer = require("inquirer");
 // require the fs package
 const fs = require("fs");
