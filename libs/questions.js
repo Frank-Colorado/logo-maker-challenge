@@ -2,7 +2,8 @@
 // tinycolor2 is a package that allows us to convert colors to different formats and validate colors
 const tinyColor = require("tinycolor2");
 
-const validateColor = (color) => {
+const validateColor = (value) => {
+  const color = tinyColor(value);
   // If the color is valid, return true
   if (color.isValid()) {
     return true;
@@ -32,7 +33,9 @@ questions = [
     name: "textColor",
     message:
       "What color do you want your logo text to be? (color keyword or hex code)",
-    validate: validateColor(value),
+    validate: function (value) {
+      return validateColor(value);
+    },
   },
   // Prompt for shape
   {
@@ -47,7 +50,9 @@ questions = [
     name: "shapeColor",
     message:
       "What color do you want your logo shape to be? (color keyword or hex code)",
-    validate: validateColor(value),
+    validate: function (value) {
+      return validateColor(value);
+    },
   },
 ];
 
