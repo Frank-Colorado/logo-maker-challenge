@@ -2,10 +2,14 @@
 // tinycolor2 is a package that allows us to convert colors to different formats and validate colors
 const tinyColor = require("tinycolor2");
 
+// This is a function called validateColor
+// It has 1 parameter called value
 const validateColor = (value) => {
+  // The value is passed to the tinyColor function
   const color = tinyColor(value);
-  // If the color is valid, return true
+  // The color is validated using the isValid method
   if (color.isValid()) {
+    // If the color is valid, return true
     return true;
   } else {
     // Otherwise, return an error message
