@@ -30,7 +30,7 @@ class Square extends Shape {
     return `
     <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
     <rect width="300" height="200" fill="${this.shapeColor}"/>
-    <text x="50%" y="50%" font-size="75" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
+    <text x="50%" y="55%" font-size="75" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
     </svg>
      `;
   }
