@@ -16,11 +16,11 @@ class Shape {
 class Circle extends Shape {
   render() {
     return `
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-        <circle cx="150" cy="100" r="80" fill="${this.shapeColor}"/>
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
-        </svg>
-        `;
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+    <circle cx="150" cy="100" r="100" fill="${this.shapeColor}"/>
+    <text x="50%" y="55%" font-size='65' dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
+    </svg>
+    `;
   }
 }
 
@@ -28,11 +28,11 @@ class Circle extends Shape {
 class Square extends Shape {
   render() {
     return `
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-          <rect x="50" y="50" width="190" height="200" fill="${this.shapeColor}"/>
-          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
-          </svg>
-          `;
+    <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="300" height="200" fill="${this.shapeColor}"/>
+    <text x="50%" y="50%" font-size="75" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
+    </svg>
+     `;
   }
 }
 
@@ -40,11 +40,11 @@ class Square extends Shape {
 class Triangle extends Shape {
   render() {
     return `
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-            <polygon points="150,0 255,180 48,180" fill="${this.shapeColor}"/>
-            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
-            </svg>
-            `;
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+    <polygon points="150,20 30,180 270,180" fill="${this.shapeColor}"/>
+    <text x="50%" y="65%" font-size='50' dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
+    </svg>
+    `;
   }
 }
 
