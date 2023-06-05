@@ -24,11 +24,9 @@ describe("Shape classes", () => {
       const square = new Square("test", "red", "blue");
       const result = square.render();
 
+      expect(result).toContain('<rect width="300" height="200" fill="blue"/>');
       expect(result).toContain(
-        '<rect x="10" y="10" width="80" height="80" fill="blue"/>'
-      );
-      expect(result).toContain(
-        '<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="red">test</text>'
+        '<text x="50%" y="55%" font-size="75" dominant-baseline="middle" text-anchor="middle" fill="red">test</text>'
       );
     });
   });
