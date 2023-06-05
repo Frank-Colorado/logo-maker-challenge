@@ -38,10 +38,10 @@ describe("Shape classes", () => {
       const triangle = new Triangle("test", "red", "blue");
       const result = triangle.render();
       expect(triangle.render()).toContain(
-        '<polygon points="50,10 10,90 90,90" fill="blue"/>'
+        '<polygon points="150,20 30,180 270,180" fill="blue"/>'
       );
       expect(result).toContain(
-        '<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="red">test</text>'
+        '<text x="50%" y="65%" font-size="50" dominant-baseline="middle" text-anchor="middle" fill="red">test</text>'
       );
     });
   });
