@@ -8,9 +8,11 @@ describe("Shape classes", () => {
     test("should return an SVG string for a circle", () => {
       const circle = new Circle("test", "red", "blue");
       const result = circle.render();
-      expect(result).toContain('<circle cx="50" cy="50" r="40" fill="blue"/>');
       expect(result).toContain(
-        '<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="red">test</text>'
+        '<circle cx="150" cy="100" r="100" fill="blue"/>'
+      );
+      expect(result).toContain(
+        '<text x="50%" y="55%" font-size="65" dominant-baseline="middle" text-anchor="middle" fill="red">test</text>'
       );
     });
   });

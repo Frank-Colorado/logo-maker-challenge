@@ -18,7 +18,7 @@ class Circle extends Shape {
     return `
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
     <circle cx="150" cy="100" r="100" fill="${this.shapeColor}"/>
-    <text x="50%" y="55%" font-size='65' dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
+    <text x="50%" y="55%" font-size="65" dominant-baseline="middle" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
     </svg>
     `;
   }
