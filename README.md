@@ -40,7 +40,7 @@ N/A
 
 ## Usage
 
----- : This link will take you to a tutorial video I created on how to use the app.
+https://drive.google.com/file/d/1D7BWodtsANuadnSj02MHmBZn6OMwurzY/view : This link will take you to a tutorial video I created on how to use the app.
 
 ## Credits
 
